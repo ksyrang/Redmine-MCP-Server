@@ -24,4 +24,4 @@ logs/
 Thumbs.db
 
 # npm file
-.tgz
+*.tgz

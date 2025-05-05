@@ -1,6 +1,6 @@
 {
   "name": "redmine-mcp-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "STDIO를 통해 Redmine API와 통합되는 MCP 서버 연습",
   "main": "server.js",
   "type": "module",
