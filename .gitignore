@@ -22,3 +22,6 @@ logs/
 # OS 파일
 .DS_Store
 Thumbs.db
+
+# npm file
+.tgz
