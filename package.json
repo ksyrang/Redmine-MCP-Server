@@ -8,9 +8,6 @@
     "start": "node server.js",
     "build": "node build.js"
   },
-  "bin": {
-  "redmine-mcp-server": "./bin/redmine-mcp-server.js"
-  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.10.2",
     "zod": "^3.22.4",
