@@ -28,12 +28,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/사용자명/redmine-mcp-server.git"
+    "url": "git+https://github.com/ksyrang/Redmine-MCP-Server.git"
   },
   "bugs": {
-    "url": "https://github.com/사용자명/redmine-mcp-server/issues"
+    "url": "https://github.com/ksyrang/redmine-mcp-server/issues"
   },
-  "homepage": "https://github.com/사용자명/redmine-mcp-server#readme",
+  "homepage": "https://github.com/ksyrang/redmine-mcp-server#readme",
   "engines": {
     "node": ">=18.0.0"
   }
