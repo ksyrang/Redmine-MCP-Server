@@ -1,0 +1,31 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - redmineBaseUrl
+      - redmineApiKey
+    properties:
+      redmineBaseUrl:
+        type: string
+        description: The base URL of the Redmine server
+      redmineApiKey:
+        type: string
+        description: The Redmine API key
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'node',
+      args: ['dist/server.js'],
+      env: {
+        REDMINE_BASE_URL: config.redmineBaseUrl,
+        REDMINE_API_KEY: config.redmineApiKey
+      }
+    })
+  exampleConfig:
+    redmineBaseUrl: https://demo.redmine.org
+    redmineApiKey: 1234567890abcdef
