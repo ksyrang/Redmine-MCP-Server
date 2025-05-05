@@ -5,7 +5,8 @@ import { z } from "zod";
 import fetch from "node-fetch";
 
 // 환경변수에서 서버 설정 가져오기
-let baseUrl = process.env.REDMINE_BASE_URL;
+let baseUrl = process.env.REDMINE_BASE_URL || process.env.redmineBaseUrl;
+const apiKey = process.env.REDMINE_API_KEY || process.env.redmineApiKey;
 // URL 형식 확인 및 수정 - 프로토콜이 없으면 https:// 추가
 if (baseUrl && !baseUrl.startsWith('http://') && !baseUrl.startsWith('https://')) {
   baseUrl = 'https://' + baseUrl;
@@ -13,7 +14,7 @@ if (baseUrl && !baseUrl.startsWith('http://') && !baseUrl.startsWith('https://')
 
 const serverConfig = {
   baseUrl: baseUrl,
-  apiKey: process.env.REDMINE_API_KEY
+  apiKey: apiKey
 };
 
 // 환경변수 검증
