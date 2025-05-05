@@ -1,0 +1,40 @@
+{
+  "name": "redmine-mcp-server",
+  "version": "1.0.0",
+  "description": "STDIO를 통해 Redmine API와 통합되는 MCP 서버",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node build.js"
+  },
+  "bin": {
+  "redmine-mcp-server": "./bin/redmine-mcp-server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "zod": "^3.22.4",
+    "node-fetch": "^3.3.2"
+  },
+  "keywords": [
+    "redmine",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "anthropic",
+    "api"
+  ],
+  "author": "JinSoo KIM",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/사용자명/redmine-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/사용자명/redmine-mcp-server/issues"
+  },
+  "homepage": "https://github.com/사용자명/redmine-mcp-server#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

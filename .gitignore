@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 빌드 출력
+dist/
+
+# 환경 변수
+.env
+
+# 로그
+logs/
+*.log
+
+# IDE 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS 파일
+.DS_Store
+Thumbs.db
